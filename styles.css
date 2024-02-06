@@ -1,0 +1,225 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+/*Pagina de Inicio*/
+
+.navbar {
+   background-color: black;
+   height: 50px;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+}
+
+.navbar a {
+   padding: 15px 25px 15px 25px;
+   text-decoration: none;
+   color: white;
+   background-color: black;
+   float: right;
+   font-size: 17px;
+}
+
+.menu {
+   margin-right: 50px;
+}
+
+.navbar a:hover {
+   background-color: gray;
+}
+
+#titulo-imagen {
+   position: absolute;
+   top: 40%;
+   left: 15%;
+   color: white;
+   text-align: center;
+   font-size: 60px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   z-index: 2;
+}
+
+#texto-imagen {
+   position: absolute;
+   top: 50%;
+   left: 15%;
+   color: white;
+   text-align: center;
+   font-size: 15px;
+   z-index: 2;
+}
+
+.cubiertos {
+   filter: brightness(0.3);
+}
+
+/*Hasta Aqui*/
+
+
+/* Sobre Nosaltres */
+
+.nosaltres {
+   margin: 0 15% 0 15%;
+   height: 550px;
+   padding: 20px;
+}
+
+#sobre-nosaltres {
+   margin: 25px 0 25px 0;
+   font-size: 30px;
+}
+
+#divrestaurante {
+   margin-bottom: 25%;
+}
+
+#restaurante1 {
+   width: 250px;
+   height: 200px;
+   border-radius: 5%;
+   float: left;
+   position: absolute;
+}
+
+#p1 {
+   position: absolute;
+   margin: 2% 5% 0 17%;
+   width: 800px;
+   height: 200px;
+}
+
+#divrestaurante2 {
+   margin-bottom: 25%;
+}
+
+#restaurante2 {
+   float: right;
+   border-radius: 5%;
+}
+
+#p2 {
+   margin: 2% 0 10% 0;
+   position: absolute;
+   width: 850px;
+   height: 200px;
+}
+
+/* Hasta Aqui */
+
+
+
+/*Carta*/
+.carta {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+   width: 70%;
+   margin: auto; /* Centra el contenedor en la página */
+   margin-bottom: 5%;
+}
+
+.header {
+   font-size: 25px;
+}
+
+.menu-header {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   background-color: rgb(11, 11, 61);
+}
+
+.menu-titulo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid black;
+   width: 200px; /* Hace el título más estrecho */
+   text-align: center;
+}
+
+.menu1, .menu2{
+   display: grid;
+   grid-template-columns: 200px auto; /* Ajusta para hacer el título más estrecho y el contenido más alargado */
+   gap: 10px; /* Reduce el espacio entre el título y el contenido */
+}
+
+.contingut {
+   display: grid;
+   grid-template-rows: auto auto;
+   gap: 5px; /* Reduce el espacio entre los elementos del contenido */
+}
+
+.contingut-titulo {
+   font-size: 30px;
+}
+
+.menu-imagenes {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5px; /* Reduce el espacio entre las imágenes */
+}
+
+.menu-imagenes img {
+   width: 100%;
+   height: auto;
+}
+
+
+
+
+/*Hasta aqui*/
+
+
+
+/*Galeria Imatges*/
+
+
+.Galeria {
+   margin: 0 5% 0 12%;
+   height: 100%;
+   padding: 20px;
+}
+
+
+#Galeriatitle {
+   margin: 0 0 0 25px;
+   font-size: 25px;
+}
+
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   padding: 10px;
+}
+
+.img-galeria {
+   font-size: 30px;
+   text-align: center;
+   margin: 15px;
+}
+
+.img-galeria1 {
+   font-size: 30px;
+   text-align: center;
+   margin: 15px;
+   filter: brightness(0.5);
+}
+
+
+.img-galeria:hover {
+   filter: brightness(0.5);
+   border: 5px solid rgb(70, 145, 62);
+}
+
+.img-galeria1:hover {
+   filter: brightness(1);
+   border: 5px solid rgb(70, 145, 62);
+}
+
+/*Hasta Aqui*/
