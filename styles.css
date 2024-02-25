@@ -85,8 +85,8 @@
 
 #p1 {
    position: absolute;
-   margin: 2% 5% 0 17%;
-   width: 800px;
+   margin: 2% 5% 0 20%;
+   width: 700px;
    height: 200px;
 }
 
@@ -102,7 +102,7 @@
 #p2 {
    margin: 2% 0 10% 0;
    position: absolute;
-   width: 850px;
+   width: 750px;
    height: 200px;
 }
 
@@ -113,7 +113,7 @@
 /*Carta*/
 .carta {
    display: grid;
-   grid-template-columns: 1fr;
+   grid-template-columns: fr;
    gap: 20px;
    width: 70%;
    margin: auto; /* Centra el contenedor en la página */
@@ -223,3 +223,32 @@
 }
 
 /*Hasta Aqui*/
+
+
+@media (max-width: 800px) {
+   .menu-imagenes {
+     grid-template-columns: 1fr; /* Canvia a una sola columna per a les imatges */
+   }
+ 
+   .grid-container {
+     grid-template-columns: 1fr 1fr; /* Canvia a dues columnes per a la galeria */
+   }
+ }
+
+ 
+
+ @media (max-width: 600px) {
+   .nosaltres, .carta, .Galeria {
+     margin: 0 10px; /* Redueix el marge */
+   }
+ 
+   .navbar, .menu, .cubiertos, .nosaltres, .carta, .Galeria, .grid-container {
+     width: auto; /* Ajusta la amplada per adaptar-se a una sola columna */
+     margin: 0 10px;
+   }
+ 
+   .menu1, .menu2, .contingut, .menu-imagenes, .grid-container {
+     grid-template-columns: 1fr; /* Canvia tot a una sola columna */
+   }
+ }
+ 
