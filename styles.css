@@ -1,0 +1,57 @@
+.primario {
+    background-color: #FF0000;
+}
+
+.secundario {
+    background-color: #00FF00; 
+}
+
+.terciario {
+    background-color: #0000FF;
+}
+
+/*Estilos generales*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.primario, .secundario, .terciario {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.primario::after, .secundario::after, .terciario::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: multiply; /*Mezcla de colores*/
+    z-index: -1;
+}
+
+
+.secundario {
+    top: -50px;
+    left: -50px;
+}
+
+.terciario {
+    top: -100px;
+    left: -100px;
+}
+
+h1 {
+    text-align: center;
+}
